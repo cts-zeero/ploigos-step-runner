@@ -348,7 +348,6 @@ class StepImplementer(ABC):  # pylint: disable=too-many-instance-attributes
             "Step Configuration Runtime Overrides",
             ConfigValue.convert_leaves_to_values(self.step_config_overrides)
         )
-
         # create the munged runtime step configuration and print
         copy_of_runtime_step_config = self.get_copy_of_runtime_step_config()
         StepImplementer.__print_data(
